@@ -21,7 +21,7 @@ $page == "" ? "หน้าแรก" : $page;
                 <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
             </svg>
             <h2 class="fw-normal">Heading</h2>
-            <p> ddddd </p>
+            <p> </p>
             <p><a class="btn btn-secondary" href="#">View details »</a></p>
         </div><!-- /.col-lg-2 -->
         <div class="col-lg-2">
