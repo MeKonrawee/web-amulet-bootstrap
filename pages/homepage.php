@@ -18,7 +18,7 @@ $page == "" ? "หน้าแรก" : $page;
         <div class="col-lg-2">
             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <image href="assets/หลวงพ่ออ่ำ2.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
             </svg>
             <h2 class="fw-normal">Heading</h2>
             <p> </p>
