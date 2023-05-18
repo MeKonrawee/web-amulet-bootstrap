@@ -1,10 +1,10 @@
 const express = require("express");
 const {
-  InsertMenuService: insertHistory,
-  UpdateMenuService: updateHistory,
-  GetMenuService: getHistory,
-  DeleteMenuService: deleteHistory,
-  FindMenuService: findHistory,
+  InsertHistoryService: insertHistory,
+  UpdateHistoryService: updateHistory,
+  GetHistoryService: getHistory,
+  DeleteHistoryService: deleteHistory,
+  FindHistoryService: findHistory,
 } = require("../controllers/historyController");
 
 const swaggerUi = require("swagger-ui-express");
