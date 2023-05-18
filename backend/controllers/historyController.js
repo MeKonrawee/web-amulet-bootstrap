@@ -2,7 +2,7 @@
 
 const firebase = require("../db");
 const firestore = firebase.firestore();
-const MenuResponse = require("../models/history");
+const HistoryResponse = require("../models/history");
 
 const insertHistory = async (req, res, next) => {
   try {
