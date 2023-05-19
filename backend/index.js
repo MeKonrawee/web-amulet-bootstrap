@@ -11,6 +11,6 @@ app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use("/api/", api.routes);
+app.use("/api", api.routes);
 
 app.listen(config.port, () => console.log("http://localhost:" + config.port));
