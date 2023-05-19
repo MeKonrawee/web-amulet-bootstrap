@@ -1,9 +1,9 @@
 class HistoryResponse {
-  constructor(id, name, image, history) {
+  constructor(id, name, image, details) {
     this.id = id;
     this.name = name;
     this.image = image;
-    this.history = history;
+    this.details = details;
   }
 }
 

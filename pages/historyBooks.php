@@ -1,4 +1,5 @@
 <?php
+require_once "services/history-service.php";
 $header = $page == "" ? "หนังสือชีวประวัติ" : $page;
 ?>
 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">

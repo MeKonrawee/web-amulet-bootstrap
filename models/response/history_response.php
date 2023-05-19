@@ -5,14 +5,14 @@ class HistoryResponse
     public $id;
     public $name;
     public $image;
-    public $history;
+    public $details;
 
-    public function __construct($id, $image, $name, $history)
+    public function __construct($id, $image, $name, $details)
     {
         $this->id = $id;
         $this->name = $name;
         $this->image = $image;
-        $this->history = $history;
+        $this->details = $details;
     }
 
     public static function fromJson($json)
@@ -21,7 +21,7 @@ class HistoryResponse
             $json["id"],
             $json["name"],
             $json["image"],
-            $json["history"]
+            $json["details"]
         );
     }
 
@@ -31,7 +31,7 @@ class HistoryResponse
             "id" => $this->id,
             "name" => $this->name,
             "image" => $this->image,
-            "quantity" => $this->history
+            "details" => $this->details
         ];
     }
 }
