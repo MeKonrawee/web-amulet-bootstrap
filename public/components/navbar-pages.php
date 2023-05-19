@@ -1,12 +1,14 @@
 <div id="page-content-navbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand mb-0 h1" href="#">Chainat Amulet</a>
+            <a class="navbar-brand mb-0 h1" href="?page=หน้าแรก">
+                <image src="assets/images/logo.png" alt="Chainat Amulet Logo" width="150" height="50"></image>
+            </a>
             <button class="navbar-toggle collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                     <li class="nav-item <?php echo $page == "" ? "active" : ""; ?>">
-                        <a class="nav-link" href="/">
+                        <a class="nav-link" href="?page=หน้าแรก">
                             <span>หน้าแรก</span></a>
                     </li>
                     <li class="nav-item <?php echo $page == "ประวัติพระเกจิ" ? "active" : ""; ?>">
@@ -14,7 +16,7 @@
                             <span>ประวัติพระเกจิ</span></a>
                     </li>
                     <li class="nav-item <?php echo $page == "หนังสือชีวประวัติ" ? "active" : ""; ?>">
-                        <a class="nav-link" href="?pages=หนังสือชีวประวัติ">
+                        <a class="nav-link" href="?page=หนังสือชีวประวัติ">
                             <span>หนังสือชีวประวัติ</span></a>
                     </li>
                     <li class="nav-item dropdown">

@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 
 $page = isset($_GET["page"]) ? $_GET["page"] : '';
 ?>
