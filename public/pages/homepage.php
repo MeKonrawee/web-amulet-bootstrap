@@ -9,9 +9,6 @@ $page == "" ? "หน้าแรก" : $page;
         <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
 </div>
-<!-- <div class="container">
-    <h1 class="mt-4"><input type="search" class="form-control" placeholder="Search..." aria-label="Search"><button class="btn btn-outline-success" type="submit">Search</button></h1>
-</div> -->
 <div class="container marketing">
     <!-- Three columns of text below the carousel -->
     <p>
