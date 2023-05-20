@@ -6,7 +6,7 @@ $page == "" ? "หน้าแรก" : $page;
 <div class="container">
     <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-primary" type="submit">Search</button>
     </form>
 </div>
 <div class="container marketing">
@@ -19,7 +19,11 @@ $page == "" ? "หน้าแรก" : $page;
                 <image href="assets/images/หลวงพ่ออ่ำ2.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
             </svg>
             <h4 class="fw-normal">หลวงพ่ออ่ำ</h4>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            <p>
+                <li <?php echo $details == "$name" ? "active" : ""; ?>>
+                    <a class="btn btn-secondary" href="components/details-history.php?name=<?php echo urlencode($name); ?>">View details »</a>
+                </li>
+            </p>
         </div>
     </div><!-- /.row -->
     </p>

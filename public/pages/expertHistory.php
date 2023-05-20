@@ -1,69 +1,32 @@
 <?php
 $page == "" ? "ประวัติพระเกจิ" : $page;
 ?>
-<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+<div class="text-center">
     <p>—————— <i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
                 <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" />
             </svg></i> ——————</p>
-    <h1 class="mt-4">ประวัติพระเกจิ</h1>
+    <h2>ประวัติพระเกจิ</h2>
     <p>ประวัติพระเกจิอาจารย์ ประวัติพระคณาจารย์ พระเครื่องพระเกจิ</p>
 </div>
-
 <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-primary" type="submit">ค้นหา</button>
+    </form>
+    <br>
+    <div class="col-md-12">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="300" height="350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
-                    <image href="assets/images/หลวงพ่ออ่ำ2.jpg" width="100%" height="100%" fill="#55595c">
-                    </image><text x="70%" y="95%" fill="#eceeef" dy=".3em">หลวงพ่ออ่ำ</text>
+                    <image href="assets/images/หลวงพ่ออ่ำ2.jpg" width="100%" height="100%"></image>
                 </svg>
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg>
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg>
-                <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-body-secondary">9 mins</small>
-                    </div>
-                </div>
+            <div class="col p-4 d-flex flex-column position-static">
+                <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                <h3 class="mb-0">พระครูสถิตสมณวัตร (หลวงพ่ออ่ำ)</h3>
+                <!-- <div class="mb-1 text-body-secondary">Nov 12</div> -->
+                <p class="card-text mb-auto">ท่านเกิดที่บ้านหนอง ตำบลตลุก เมื่อปี พ.ศ. 2397 โยมบิดาชื่อ น้อย เมื่อตอนวัยหนุ่มนั้นท่านได้เล่าเรียนวิชาหมัดมวยและคาถาอาคม และมีลูกน้องอยู่หลายคน พออายุครบ 20 ปี โยมบิดามารดาจึงได้ไปฝากกับหลวงพ่อเกิด วัดตลุก และอุปสมบทที่วัดตลุก ในราวปี พ.ศ. 2417 เดิมทีท่านจะบวชแค่ 15 หรือ 20 วันเท่านั้น แต่โยมบิดา-มารดาขอให้บวชครบพรรษา ครั้นพอออกพรรษาหลวงพ่ออ่ำก็ไม่ยอมลาสิกขา กลับมุ่งเรียนวิชาแพทย์แผนโบราณ จึงได้เดินทางมาทางโคราช เนื่องจากทราบว่ามีอาจารย์ดีซึ่งชำนาญการบำบัดรักษาโรคด้วยยาสมุนไพรและรากไม้ เมื่อท่านไปถึงบ้านครูหมอยา ซึ่งเป็นคฤหัสถ์ ลูกสาวครูจึงนำภัตตาหารมาถวาย เป็นเนื้อทอดหนึ่งจาน ซึ่งเจ้าของบ้านใช้เวทมนตร์ทำให้เห็นเป็นเนื้อทอด ท่านก็ไม่ยอมฉัน แล้วท่านก็คลายเวทมนตร์ ในที่สุดปรากฏว่าเนื้อทอดจานนั้นก็กลายเป็นเศษไม้ เจ้าของบ้านชอบใจว่าท่านสามารถแก้มนต์ได้ จึงรับว่าจะถ่ายทอดวิชาต่างๆ ให้ท่าน แต่ต้องสึกมาเป็นฆราวาสเสียก่อน ท่านจึงต้องสึกออกมาเรียนเป็นเวลา 6 เดือน ก็สามารถศึกษาได้จนหมดทั้งวิชาทางแพทย์และวิทยาคมต่างๆ หลังจากนั้นท่านจึงได้กลับมาบวชใหม่ จากนั้นท่านก็ธุดงค์ไปยังชายแดนเขมรอีก 6-7 ปี จึงกลับมาที่วัดตลุก หลังจากนั้นไม่นานหลวงพ่อเกิดก็มรณภาพลง ท่านจึงเป็นเจ้าอาวาส วัดตลุกสืบต่อมาในราวปี พ.ศ. 2448 หลังจากท่านได้มาจำพรรษาอยู่ที่วัดตลุกแล้ว ท่านก็รักษาโรคภัยไข้เจ็บให้แก่ชาวบ้าน ทั้งผู้คนที่ถูกคุณไสยต่างๆ มากมาย จนมีชื่อเสียงโด่งดังไปทั่ว เชื่อกันว่าท่านมีวาจาสิทธิ์พูดอะไรจะเป็นอย่างนั้น นอกจากในด้านการรักษาต่างๆ แล้ว หลวงพ่ออ่ำท่านก็ได้สร้างเสนาสนะต่างๆ ภายในวัดอีกหลายอย่าง จนวัดมีความเจริญรุ่งเรืองมาโดยตลอด หลวงพ่ออ่ำท่านได้รับพระราชทานสมณศักดิ์เป็นพระครูสถิตย์สมณวัตร เจ้าคณะแขวงสรรพยา ในวันที่ 9 พฤศจิกายน พ.ศ. 2467 หลังจากนั้นในปี พ.ศ. 2468 ท่านก็เริ่มอาพาธและมรณภาพลงวันที่ 15 ตุลาคม พ.ศ. 2468 แม้หลวงพ่ออ่ำจะมรณภาพไปนานแล้วแต่ชาวบ้านยังรักเคารพท่านเสมอมา และจัดงานประจำปี เพื่อระลึกถึงท่านเป็นประจำทุกปีในปี พ.ศ. 2467 ปีที่ท่านได้รับพระราชทานสมณศักดิ์ ศิษยานุศิษย์ได้ขออนุญาตหลวงพ่ออ่ำสร้างเหรียญเป็นที่ระลึก เพื่อแจกให้แก่ศิษย์ในงานฉลองสมณศักดิ์ เหรียญนี้เป็นเหรียญเก่าเหรียญหนึ่งของจังหวัดชัยนาท และเป็นเหรียญที่มีประสบการณ์เหรียญหนึ่งเลยทีเดียว</p>
             </div>
         </div>
     </div>
