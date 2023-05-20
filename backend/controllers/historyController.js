@@ -22,14 +22,14 @@ const getHistory = async (req, res, next) => {
     const data = await history.get();
     const historyArray = [];
     if (data.empty) {
-      return res.status(404).json("No menu found");
+      return res.status(404).json("No found");
     } else {
       data.forEach((doc) => {
         const history = new HistoryResponse(
           doc.id,
           doc.data().name,
           doc.data().image,
-          doc.data().history
+          doc.data().details
         );
         historyArray.push(history);
       });
