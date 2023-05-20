@@ -33,7 +33,7 @@ const getHistory = async (req, res, next) => {
         );
         historyArray.push(history);
       });
-      return res.status(200).json(menusArray);
+      return res.status(200).json(historyArray);
     }
   } catch (err) {
     console.error(err);
