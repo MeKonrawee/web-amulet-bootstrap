@@ -45,7 +45,7 @@ const getHistory = async (req, res, next) => {
         return res.status(404).json("No found");
       } else {
         data.forEach((doc) => {
-          if (doc.data().name === keyword) {
+          if (doc.data().name.includes(keyword)) {
             const history = new HistoryResponse(
               doc.id,
               doc.data().name,
