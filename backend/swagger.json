@@ -1,6 +1,6 @@
 {
   "swagger": "2.0",
-  "host": "localhost:1412",
+  "host": "localhost:3000",
   "basePath": "/api",
   "tags": [
     {
