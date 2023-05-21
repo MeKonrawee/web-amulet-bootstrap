@@ -1,4 +1,5 @@
 <?php
+require_once "services/history-service.php";
 $page == "" ? "ประวัติพระเกจิ" : $page;
 ?>
 <div class="text-center">
@@ -10,24 +11,29 @@ $page == "" ? "ประวัติพระเกจิ" : $page;
 </div>
 <div class="container">
     <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2" type="search" placeholder="ค้นหาประวัติพระเกจิอาจารย์" aria-label="Search">
         <button class="btn btn-primary" type="submit">ค้นหา</button>
     </form>
     <br>
-    <div class="col-md-12">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="300" height="350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <image href="assets/images/หลวงพ่ออ่ำ2.jpg" width="100%" height="100%"></image>
-                </svg>
-            </div>
-            <div class="col p-4 d-flex flex-column position-static">
-                <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
-                <h3 class="mb-0">พระครูสถิตสมณวัตร (หลวงพ่ออ่ำ)</h3>
-                <!-- <div class="mb-1 text-body-secondary">Nov 12</div> -->
-                <p class="card-text mb-auto">ท่านเกิดที่บ้านหนอง ตำบลตลุก เมื่อปี พ.ศ. 2397 โยมบิดาชื่อ น้อย เมื่อตอนวัยหนุ่มนั้นท่านได้เล่าเรียนวิชาหมัดมวยและคาถาอาคม และมีลูกน้องอยู่หลายคน พออายุครบ 20 ปี โยมบิดามารดาจึงได้ไปฝากกับหลวงพ่อเกิด วัดตลุก และอุปสมบทที่วัดตลุก ในราวปี พ.ศ. 2417 เดิมทีท่านจะบวชแค่ 15 หรือ 20 วันเท่านั้น แต่โยมบิดา-มารดาขอให้บวชครบพรรษา ครั้นพอออกพรรษาหลวงพ่ออ่ำก็ไม่ยอมลาสิกขา กลับมุ่งเรียนวิชาแพทย์แผนโบราณ จึงได้เดินทางมาทางโคราช เนื่องจากทราบว่ามีอาจารย์ดีซึ่งชำนาญการบำบัดรักษาโรคด้วยยาสมุนไพรและรากไม้ เมื่อท่านไปถึงบ้านครูหมอยา ซึ่งเป็นคฤหัสถ์ ลูกสาวครูจึงนำภัตตาหารมาถวาย เป็นเนื้อทอดหนึ่งจาน ซึ่งเจ้าของบ้านใช้เวทมนตร์ทำให้เห็นเป็นเนื้อทอด ท่านก็ไม่ยอมฉัน แล้วท่านก็คลายเวทมนตร์ ในที่สุดปรากฏว่าเนื้อทอดจานนั้นก็กลายเป็นเศษไม้ เจ้าของบ้านชอบใจว่าท่านสามารถแก้มนต์ได้ จึงรับว่าจะถ่ายทอดวิชาต่างๆ ให้ท่าน แต่ต้องสึกมาเป็นฆราวาสเสียก่อน ท่านจึงต้องสึกออกมาเรียนเป็นเวลา 6 เดือน ก็สามารถศึกษาได้จนหมดทั้งวิชาทางแพทย์และวิทยาคมต่างๆ หลังจากนั้นท่านจึงได้กลับมาบวชใหม่ จากนั้นท่านก็ธุดงค์ไปยังชายแดนเขมรอีก 6-7 ปี จึงกลับมาที่วัดตลุก หลังจากนั้นไม่นานหลวงพ่อเกิดก็มรณภาพลง ท่านจึงเป็นเจ้าอาวาส วัดตลุกสืบต่อมาในราวปี พ.ศ. 2448 หลังจากท่านได้มาจำพรรษาอยู่ที่วัดตลุกแล้ว ท่านก็รักษาโรคภัยไข้เจ็บให้แก่ชาวบ้าน ทั้งผู้คนที่ถูกคุณไสยต่างๆ มากมาย จนมีชื่อเสียงโด่งดังไปทั่ว เชื่อกันว่าท่านมีวาจาสิทธิ์พูดอะไรจะเป็นอย่างนั้น นอกจากในด้านการรักษาต่างๆ แล้ว หลวงพ่ออ่ำท่านก็ได้สร้างเสนาสนะต่างๆ ภายในวัดอีกหลายอย่าง จนวัดมีความเจริญรุ่งเรืองมาโดยตลอด หลวงพ่ออ่ำท่านได้รับพระราชทานสมณศักดิ์เป็นพระครูสถิตย์สมณวัตร เจ้าคณะแขวงสรรพยา ในวันที่ 9 พฤศจิกายน พ.ศ. 2467 หลังจากนั้นในปี พ.ศ. 2468 ท่านก็เริ่มอาพาธและมรณภาพลงวันที่ 15 ตุลาคม พ.ศ. 2468 แม้หลวงพ่ออ่ำจะมรณภาพไปนานแล้วแต่ชาวบ้านยังรักเคารพท่านเสมอมา และจัดงานประจำปี เพื่อระลึกถึงท่านเป็นประจำทุกปีในปี พ.ศ. 2467 ปีที่ท่านได้รับพระราชทานสมณศักดิ์ ศิษยานุศิษย์ได้ขออนุญาตหลวงพ่ออ่ำสร้างเหรียญเป็นที่ระลึก เพื่อแจกให้แก่ศิษย์ในงานฉลองสมณศักดิ์ เหรียญนี้เป็นเหรียญเก่าเหรียญหนึ่งของจังหวัดชัยนาท และเป็นเหรียญที่มีประสบการณ์เหรียญหนึ่งเลยทีเดียว</p>
+    <?php
+    $col = getHistory();
+    foreach ($col as $key => $value) {
+    ?>
+        <div class="col-md-12">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                    <svg class="bd-placeholder-img" width="300" height="350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <image href="<?php echo $value["image"]; ?>" width="100%" height="100%"></image>
+                    </svg>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
+                    <h3 class="mb-0"><?php echo $value["name"]; ?></h3>
+                    <!-- <div class="mb-1 text-body-secondary">Nov 12</div> -->
+                    <p class="card-text mb-auto"><?php echo $value["details"]; ?></p>
+                </div>
             </div>
         </div>
-    </div>
+    <?php } ?>
 </div>

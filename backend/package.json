@@ -23,7 +23,12 @@
     "firebase-admin": "^11.5.0",
     "md5": "^2.3.0",
     "nodemailer": "^6.9.1",
-    "swagger-ui-express": "^4.3.0"
+    "swagger-ui-express": "^4.3.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-jscs-checker": "~0.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.21"
