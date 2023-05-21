@@ -18,7 +18,7 @@ const insertHistory = async (req, res, next) => {
 
 const getHistory = async (req, res, next) => {
   try {
-    const keyword = req.params.keyword;
+    const keyword = req.query.keyword;
     if (keyword === "") {
       const history = await firestore.collection("history");
       const data = await history.get();
@@ -40,7 +40,8 @@ const getHistory = async (req, res, next) => {
     } else {
       const history = await firestore
         .collection("history")
-        .where("name", "contains", keyword);
+        .where("name", ">=", keyword)
+        .where("name", "<=", `${keyword}\uf8ff`);
       const data = await history.get();
       if (!data.exists) {
         return res.status(404).json("History not found");

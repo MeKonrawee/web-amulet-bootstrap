@@ -16,7 +16,7 @@ router.use("/swagger", swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 router.post("/history", insertHistory);
 router.post("/history/:id", updateHistory);
-router.get("/history/:keyword", getHistory);
+router.get("/history", getHistory);
 router.get("/history/delete/:id", deleteHistory);
 router.get("/history/find/:id", findHistory);
 
