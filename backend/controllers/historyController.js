@@ -38,20 +38,29 @@ const getHistory = async (req, res, next) => {
         return res.status(200).json(historyArray);
       }
     } else {
-      const history = await firestore
-        .collection("history")
-        .where("name", ">=", keyword)
-        .where("name", "<=", `${keyword}\uf8ff`);
+      const history = await firestore.collection("history");
       const data = await history.get();
-      if (!data.exists) {
-        return res.status(404).json("History not found");
+      const historyArray = [];
+      if (data.empty) {
+        return res.status(404).json("No found");
       } else {
-        return res.status(200).json(data.data());
+        data.forEach((doc) => {
+          if (doc.data().name === keyword) {
+            const history = new HistoryResponse(
+              doc.id,
+              doc.data().name,
+              doc.data().image,
+              doc.data().details
+            );
+            historyArray.push(history);
+          }
+        });
+        return res.status(200).json(historyArray);
       }
     }
   } catch (err) {
     console.error(err);
-    return res.status(400).json("bad request");
+    return res.status(400).json([]);
   }
 };
 
