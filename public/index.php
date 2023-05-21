@@ -20,9 +20,6 @@ $page = isset($_GET["page"]) ? $_GET["page"] : '';
                 case 'ประวัติพระเกจิ':
                     include 'pages/expertHistory.php';
                     break;
-                case 'หนังสือชีวประวัติ':
-                    include 'pages/historyBooks.php';
-                    break;
                 default:
                     include 'pages/homepage.php';
                     break;

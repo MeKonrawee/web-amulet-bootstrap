@@ -13,19 +13,15 @@
                     <a class="nav-link" href="?page=ประวัติพระเกจิ">
                         <span class="menu-text">ประวัติพระเกจิ</span></a>
                 </li>
-                <li class="nav-item <?php echo $page == "หนังสือชีวประวัติ" ? "active" : ""; ?>">
-                    <a class="nav-link" href="?page=หนังสือชีวประวัติ">
-                        <span class="menu-text">หนังสือชีวประวัติ</span></a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="menu-text">ติดต่อเรา</span></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item disabled" style="color: #999; cursor: not-allowed;">กลุ่ม Facebook</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#!">เครื่องราง พระเครื่อง เมืองไทย</a>
-                        <a class="dropdown-item" href="#!">ชัยนาทเมืองพระเกจิ</a>
-                        <a class="dropdown-item" href="#!">พระเครื่องยอดนิยมชัยนาท</a>
+                        <a class="dropdown-item" href="https://web.facebook.com/groups/1807313782873222">เครื่องราง พระเครื่อง เมืองไทย</a>
+                        <a class="dropdown-item" href="https://web.facebook.com/groups/266886170671057">ชัยนาทเมืองพระเกจิ</a>
+                        <a class="dropdown-item" href="https://web.facebook.com/groups/710860745670983">พระเครื่องยอดนิยมชัยนาท</a>
                     </ul>
                 </li>
             </ul>
