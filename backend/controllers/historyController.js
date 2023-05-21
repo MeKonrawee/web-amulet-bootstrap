@@ -40,7 +40,7 @@ const getHistory = async (req, res, next) => {
     } else {
       const history = await firestore
         .collection("history")
-        .where("name", "array-contains", keyword);
+        .where("name", "contains", keyword);
       const data = await history.get();
       if (!data.exists) {
         return res.status(404).json("History not found");
