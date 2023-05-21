@@ -24,7 +24,7 @@ $search = isset($_GET["name"]) ? $_GET["name"] : '';
                 <h5 class="fw-normal mt-2"><?php echo $value["name"]; ?></h5>
                 <p>
                     <li>
-                        <a class="btn btn-secondary" href="#">View details »</a>
+                        <a class="btn btn-secondary" href="<?php echo $_SERVER["PHP_SELF"] . "?page=ประวัติพระเกจิ"; ?>">ข้อมูลเพิ่มเติม »</a>
                     </li>
                 </p>
             </div>
