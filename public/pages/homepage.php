@@ -13,7 +13,7 @@ $search = isset($_GET["name"]) ? $_GET["name"] : '';
 <div class="container marketing">
     <div class="row mt-4">
         <?php
-        $col = getHistory($_POST["keyword"] ?? "");
+        $col = getHistoryV2($_POST["keyword"] ?? "");
         foreach ($col as $key => $value) {
         ?>
             <div class="col-lg-2">
