@@ -18,22 +18,35 @@ const insertHistory = async (req, res, next) => {
 
 const getHistory = async (req, res, next) => {
   try {
-    const history = await firestore.collection("history");
-    const data = await history.get();
-    const historyArray = [];
-    if (data.empty) {
-      return res.status(404).json("No found");
+    const keyword = req.params.keyword;
+    if (keyword === "") {
+      const history = await firestore.collection("history");
+      const data = await history.get();
+      const historyArray = [];
+      if (data.empty) {
+        return res.status(404).json("No found");
+      } else {
+        data.forEach((doc) => {
+          const history = new HistoryResponse(
+            doc.id,
+            doc.data().name,
+            doc.data().image,
+            doc.data().details
+          );
+          historyArray.push(history);
+        });
+        return res.status(200).json(historyArray);
+      }
     } else {
-      data.forEach((doc) => {
-        const history = new HistoryResponse(
-          doc.id,
-          doc.data().name,
-          doc.data().image,
-          doc.data().details
-        );
-        historyArray.push(history);
-      });
-      return res.status(200).json(historyArray);
+      const history = await firestore
+        .collection("history")
+        .where("name", "array-contains", keyword);
+      const data = await history.get();
+      if (!data.exists) {
+        return res.status(404).json("History not found");
+      } else {
+        return res.status(200).json(data.data());
+      }
     }
   } catch (err) {
     console.error(err);

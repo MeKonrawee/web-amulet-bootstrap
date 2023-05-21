@@ -10,13 +10,13 @@ $page == "" ? "ประวัติพระเกจิ" : $page;
     <p>ประวัติพระเกจิอาจารย์ ประวัติพระคณาจารย์ พระเครื่องพระเกจิ</p>
 </div>
 <div class="container">
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="ค้นหาประวัติพระเกจิอาจารย์" aria-label="Search">
+    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="ค้นหาประวัติพระเกจิอาจารย์" aria-label="Search" name="keyword">
         <button class="btn btn-primary" type="submit">ค้นหา</button>
     </form>
     <br>
     <?php
-    $col = getHistory();
+    $col = getHistory($_POST["keyword"] ?? "");
     foreach ($col as $key => $value) {
     ?>
         <div class="col-md-12">

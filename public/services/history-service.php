@@ -1,8 +1,8 @@
 <?php
-function getHistory()
+function getHistory($keyword)
 {
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "https://api-amulate.onrender.com/api/history");
+    curl_setopt($ch, CURLOPT_URL, "https://api-amulate.onrender.com/api/history/$keyword");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $response = curl_exec($ch);
     if (curl_error($ch)) {

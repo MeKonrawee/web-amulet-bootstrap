@@ -5,15 +5,15 @@ $search = isset($_GET["name"]) ? $_GET["name"] : '';
 ?>
 <br>
 <div class="container">
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="ค้นหาพระเกจิอาจารย์" aria-label="Search">
+    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="ค้นหาพระเกจิอาจารย์" aria-label="Search" name="keyword">
         <button class="btn btn-primary" type="submit">Search</button>
     </form>
 </div>
 <div class="container marketing">
     <div class="row mt-4">
         <?php
-        $col = getHistory();
+        $col = getHistory($_POST["keyword"] ?? "");
         foreach ($col as $key => $value) {
         ?>
             <div class="col-lg-2">
