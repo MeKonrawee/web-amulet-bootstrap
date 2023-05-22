@@ -1,7 +1,6 @@
 <?php
 require_once "services/history-service.php";
 $page == "" ? "หน้าแรก" : $page;
-$search = isset($_GET["name"]) ? $_GET["name"] : '';
 ?>
 <br>
 <div class="container">
@@ -24,7 +23,7 @@ $search = isset($_GET["name"]) ? $_GET["name"] : '';
                 <h5 class="fw-normal mt-2"><?php echo $value["name"]; ?></h5>
                 <p>
                     <li>
-                        <a class="btn btn-secondary" href="<?php echo $_SERVER["PHP_SELF"] . "?page=ประวัติพระเกจิ"; ?>">ข้อมูลเพิ่มเติม »</a>
+                        <a class="btn btn-secondary" href="<?php echo "?page=ประวัติพระเกจิ"; ?>">ข้อมูลเพิ่มเติม »</a>
                     </li>
                 </p>
             </div>
