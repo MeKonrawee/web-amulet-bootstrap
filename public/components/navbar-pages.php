@@ -13,6 +13,11 @@
                     <a class="nav-link" href="?page=ประวัติพระเกจิ">
                         <span class="menu-text">ประวัติพระเกจิ</span></a>
                 </li>
+                </li>
+                <li class="nav-item <?php echo $page == "พระเครื่อง" ? "active" : ""; ?>">
+                    <a class="nav-link" href="?page=พระเครื่อง">
+                        <span class="menu-text">พระเครื่อง</span></a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="menu-text">ติดต่อเรา</span></a>
