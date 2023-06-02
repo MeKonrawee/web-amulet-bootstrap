@@ -22,10 +22,10 @@ const getAmulet = async (req, res, next) => {
     const data = await amulet.get();
     const amuletArray = [];
     if (data.empty) {
-      return res.status(404).json("No menu found");
+      return res.status(404).json("No amulet found");
     } else {
       data.forEach((doc) => {
-        const menu = new AmuletResponse(
+        const amulet = new AmuletResponse(
           doc.id,
           doc.data().name,
           doc.data().image
