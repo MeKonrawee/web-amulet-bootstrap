@@ -7,6 +7,7 @@ const AmuletResponse = require("../models/amulet");
 const insertAmulet = async (req, res, next) => {
   try {
     const data = req.body;
+    // ชื่อ collection ที่ข้อมูลอยู่
     await firestore.collection("amulet").doc().set(data);
 
     return res.status(201).json("Success!");
