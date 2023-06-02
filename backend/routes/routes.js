@@ -16,7 +16,6 @@ router.use("/swagger", swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 router.get("/history", getHistory);
 router.get("/amulet", getAmulet);
-router.post("/amulet", getAmulet);
 
 module.exports = {
   routes: router,
