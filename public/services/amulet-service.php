@@ -3,7 +3,7 @@ function getAmulet($keyword)
 {
     $curl = curl_init();
     $encodedUrl = urlencode($keyword);
-    $url = "https://api-amulate.onrender.com/api/Amulet?keyword=" . $encodedUrl;
+    $url = "https://api-amulate.onrender.com/api/amulet?keyword=" . $encodedUrl;
     curl_setopt_array($curl, array(
         CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
