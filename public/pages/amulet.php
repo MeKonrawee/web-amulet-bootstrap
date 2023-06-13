@@ -1,5 +1,5 @@
 <?php
-// require_once "services/history-service.php";
+require_once "services/amulet-service.php";
 $page == "" ? "พระเครื่อง" : $page;
 ?>
 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
