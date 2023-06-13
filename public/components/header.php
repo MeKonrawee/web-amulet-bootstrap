@@ -11,3 +11,4 @@
 <link rel="icon" type="image/x-icon" href="assets/spa-lotus.ico" />
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="css/styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/main.css" />
