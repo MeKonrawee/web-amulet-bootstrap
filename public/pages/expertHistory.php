@@ -26,6 +26,11 @@ $page == "" ? "ประวัติพระเกจิ" : $page;
                         <title><?php echo $value["name"]; ?></title>
                         <image href="<?php echo $value["image"]; ?>" width="100%" height="100%"></image>
                     </svg>
+                    <div class="d-flex justify-content-end">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">แผนที่การเดินทางไปวัด</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="col p-4 d-flex flex-column position-static">
                     <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->

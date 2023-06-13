@@ -24,11 +24,6 @@ $page == "" ? "พระเครื่อง" : $page;
                     </svg>
                     <div class="card-body">
                         <p class="fw-normal mt-2"><?php echo $value["name"]; ?></p>
-                        <!-- <div class="d-flex justify-content-end">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View more details</button>
-                        </div>
-                    </div> -->
                     </div>
                 </div>
             </div>

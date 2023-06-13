@@ -19,7 +19,8 @@ const getHistory = async (req, res, next) => {
             doc.id,
             doc.data().name,
             doc.data().image,
-            doc.data().details
+            doc.data().details,
+            doc.data().map
           );
           historyArray.push(history);
         });
@@ -38,7 +39,8 @@ const getHistory = async (req, res, next) => {
               doc.id,
               doc.data().name,
               doc.data().image,
-              doc.data().details
+              doc.data().details,
+              doc.data().map
             );
             historyArray.push(history);
           }
