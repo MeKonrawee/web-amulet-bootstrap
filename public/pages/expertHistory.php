@@ -28,14 +28,12 @@ $page == "" ? "ประวัติพระเกจิ" : $page;
                     </svg>
                     <div class="d-flex justify-content-end">
                         <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">แผนที่การเดินทางไปวัด</button>
+                            <button type="button" onclick="window.open('<?php echo $value["map"]; ?>', '_blank')" class=" btn btn-sm btn-outline-secondary">แผนที่การเดินทางไปวัด</button>
                         </div>
                     </div>
                 </div>
                 <div class="col p-4 d-flex flex-column position-static">
-                    <!-- <strong class="d-inline-block mb-2 text-primary">World</strong> -->
                     <h3 class="mb-0"><?php echo $value["name"]; ?></h3>
-                    <!-- <div class="mb-1 text-body-secondary">Nov 12</div> -->
                     <p class="card-text mb-auto"><?php echo $value["details"]; ?></p>
                 </div>
             </div>
